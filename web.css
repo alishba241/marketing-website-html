@@ -1,0 +1,500 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url(backgrount\ re.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.navbaar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#bl {
+    list-style-type: none;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: 700;
+    color: darkorange;
+    cursor: pointer;
+}
+
+.navbaar ul #bl {
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbaar ul #bl::after {
+    content: "";
+    height: 3px;
+    width: 0;
+    position: absolute;
+    background: darkorange;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbaar ul #bl:hover::after {
+    width: 100%;
+}
+
+.content {
+    width: 100%;
+    position: absolute;
+    transform: translateY(-50%);
+    text-align: center;
+    top: 50%;
+}
+
+.content p {
+    line-height: 25px;
+    color: white;
+    font-size: 15px;
+    margin-top: 20px;
+    font-weight: 100;
+    font-family: arial;
+}
+
+.content h1 {
+    font-size: 50px;
+    margin-top: 80px;
+    color: white;
+}
+
+#btn {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid darkorange;
+    background: transparent;
+    cursor: pointer;
+    color: white;
+    position: relative;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+
+span {
+    background-color: darkorange;
+    height: 100%;
+    width: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+#btn:hover span {
+    width: 100%;
+    border-radius: 25px;
+}
+
+#btn:hover {
+    border: none;
+}
+
+.signup {
+    width: 350px;
+    height: 500px;
+    position: absolute;
+    padding: 25px;
+    margin-top: 2%;
+    margin-left: 900px;
+    background-image: url(blackg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    box-shadow: 0px 3px 8px #000;
+}
+
+.signup h2 {
+    width: 200px;
+    color: white;
+    background-color: orangered;
+    border-radius: 10px;
+    padding: 8px;
+    text-align: center;
+    cursor: default;
+    margin-left: 50px;
+}
+
+.signup input {
+    width: 240px;
+    height: 35px;
+    background: transparent;
+    border-bottom: 1px solid darkorange;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: white;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: sans-serif;
+    margin-left: 25px;
+}
+
+.signup input:focus {
+    outline: none;
+}
+
+::placeholder {
+    color: white;
+    font-family: Arial;
+    text-align: center;
+}
+
+.bt {
+    width: 200px;
+    background-color: black;
+    border: none;
+    padding: 10px;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    transition: 0.4s ease;
+    margin-left: 50px;
+}
+
+.bt:hover {
+    background-color: orangered;
+}
+
+#bn {
+    text-decoration: none;
+    margin-right: 6px;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+#pa {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 17px;
+    padding-top: 20px;
+    margin-left: 70px;
+    color: black;
+}
+
+#sn {
+    text-decoration: none;
+    margin-left: 96px;
+    color: orangered;
+    font-weight: bolder;
+    font-family: sans-serif;
+}
+
+#sn:hover {
+    color: white;
+    transition: 0.4s ease;
+}
+
+#ra {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    color: black;
+    margin-left: 110px;
+}
+
+#h {
+    margin-left: 60px;
+    margin-top: 200px;
+    font-size: 35px;
+}
+
+#all {
+    font-size: 120px;
+    margin-left: 90px;
+    color: orangered;
+}
+
+#sl {
+    margin-left: 70px;
+    margin-top: 1%;
+    color: #757575;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.icon {
+    font-size: 25px;
+    cursor: pointer;
+    margin-left: 55px;
+    margin-top: 30px;
+}
+
+#ic1:hover {
+    color: orangered;
+    transition: 0.4s ease;
+}
+
+#ic2:hover {
+    color: orangered;
+    transition: 0.4s ease;
+}
+
+#ic3:hover {
+    color: orangered;
+    transition: 0.4s ease;
+}
+
+#ic4:hover {
+    color: orangered;
+    transition: 0.4s ease;
+}
+
+.container {
+    width: 100%;
+    height: 500px;
+    background-color: white;
+    justify-content: space-evenly;
+    display: flex;
+    margin-top: 300px;
+}
+
+.item1 {
+    width: 400px;
+    height: 600px;
+    box-shadow: 0px 3px 8px #000;
+    transition: all 300ms ease-in-out;
+}
+
+.item2 {
+    width: 400px;
+    height: 600px;
+    box-shadow: 0px 3px 8px #000;
+    transition: all 300ms ease-in-out;
+}
+
+.item3 {
+    width: 400px;
+    height: 600px;
+    box-shadow: 0px 3px 8px #000;
+    transition: all 300ms ease-in-out;
+}
+
+.item1:hover {
+    box-shadow: 0px 10px 40px black;
+    width: 403;
+    height: 503;
+}
+
+.item2:hover {
+    box-shadow: 0px 10px 40px black;
+    width: 403;
+    height: 503;
+}
+
+.item3:hover {
+    box-shadow: 0px 10px 40px black;
+    width: 403;
+    height: 503;
+}
+
+#up {
+    margin-left: 30%;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 30px;
+    margin-top: 3%;
+}
+
+#do {
+    margin-top: 2%;
+    font-family: opn;
+    font-size: 16px;
+    text-align: center;
+    color: #2a2a33;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+#nb {
+    width: 200px;
+    padding: 12px;
+    background-color: orangered;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 20px;
+    border-style: none;
+    margin-left: 25%;
+    margin-top: 8%;
+    transition: 0.4s ease;
+}
+
+#nb:hover {
+    background-color: blue;
+}
+
+.image img {
+    max-width: 450px;
+    float: left;
+    margin-right: 15%;
+    margin-left: 10%;
+    box-shadow: 0px 3px 8px #000;
+}
+
+.image {
+    margin: 150px auto;
+    width: 90%;
+    /* border: 2px solid black; */
+}
+
+.text h2 {
+    font-size: 42px;
+    color: rgb(236, 161, 22);
+}
+
+.text p {
+    font-size: 16px;
+    margin-top: 3%;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 24px;
+}
+
+#bol {
+    width: 200px;
+    background-color: black;
+    border: none;
+    padding: 10px;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    transition: 0.4s ease;
+    margin-left: 5px;
+}
+
+#bol:hover {
+    background-color: orangered;
+}
+
+#hr {
+    text-decoration: none;
+    margin-right: 6px;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.footer {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #d4caca;
+}
+
+#h4 {
+    margin-top: 20%;
+    margin-bottom: 2%;
+    font-size: 25px;
+    color: rgb(248, 90, 33);
+    font-weight: 600;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+#pp {
+    list-style-type: none;
+    color: #241e1e;
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: 8px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+#pp:hover {
+    text-decoration: underline;
+}
+
+#h5 {
+    margin-top: 10%;
+    margin-bottom: 2%;
+    font-size: 25px;
+    color: rgb(248, 90, 33);
+    font-weight: 600;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+#ie1 {
+    color: black;
+    transition: 0.4s ease;
+    margin-top: 10%;
+    cursor: pointer;
+}
+
+#ie2 {
+    color: black;
+    transition: 0.4s ease;
+    margin-top: 10%;
+    cursor: pointer;
+}
+
+#ie3 {
+    color: black;
+    transition: 0.4s ease;
+    margin-top: 10%;
+    cursor: pointer;
+}
+
+#ie4 {
+    color: black;
+    transition: 0.4s ease;
+    margin-top: 10%;
+    cursor: pointer;
+}
+
+#ie1:hover {
+    color: orangered;
+    transition: 0.4s ease;
+}
+
+#ie2:hover {
+    color: orangered;
+    transition: 0.4s ease;
+}
+
+#ie3:hover {
+    color: orangered;
+    transition: 0.4s ease;
+}
+
+#ie4:hover {
+    color: orangered;
+    transition: 0.4s ease;
+}
